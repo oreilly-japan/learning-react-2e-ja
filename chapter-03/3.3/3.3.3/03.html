@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="utf-8">
+    <title>Transforming Data</title>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<h1>Transforming Data</h1>
+<p>Open the Console</p>
+<script type="text/babel">
+    // Array.filterによるデータ変換
+    const schools = [
+      "Yorktown",
+      "Washington & Lee",
+      "Wakefield"
+    ];
+    // 配列から要素を削除する
+    const cutSchool = (cut, list) =>
+        list.filter(school => school !== cut);
+
+    console.log(cutSchool("Washington & Lee", schools).join(", ")); // "Yorktown, Wakefield"
+    console.log(schools.join("\n"));
+    // Yorktown
+    // Washington & Liberty
+    // Wakefield
+
+</script>
+</body>
+</html>

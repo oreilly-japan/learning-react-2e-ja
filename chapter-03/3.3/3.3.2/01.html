@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta charset="utf-8" />
+    <title>Pure Functions</title>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>Pure Functions</h1>
+    <p>Open the console</p>
+    <script type="text/babel">
+      var frederick = {
+        name: "Frederick Douglass",
+        canRead: false,
+        canWrite: false
+      };
+      // 純粋関数ではない
+      // 理由；
+      // ・引数を取らず戻り値も返却しないから
+      // ・関数外で宣言された変数に変更を加えているから
+      function selfEducate() {
+        frederick.canRead = true;
+        frederick.canWrite = true;
+      }
+
+      selfEducate();
+
+      console.log(frederick);
+    </script>
+  </body>
+</html>

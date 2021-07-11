@@ -1,0 +1,30 @@
+div {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+}
+
+.site-container > * {
+  height: 400px;
+}
+
+.menu {
+  color: #ffffff;
+  background-color: #00022c;
+  width: 200px;
+  float: left;
+}
+
+.content {
+  float: left;
+}
+
+.callout {
+  border: double 5px #00022c;
+}
+
+.error {
+  background-color: #efacac;
+  border: double 4px darkred;
+  color: darkred;
+  padding: 1em;
+}

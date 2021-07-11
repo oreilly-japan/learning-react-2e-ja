@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>React Elements</title>
+</head>
+<body>
+
+<!-- Target Container -->
+<div id="react-container"></div>
+
+<!-- React Library & React DOM-->
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+<script>
+    // 配列からReact要素を生成する（keyを指定する）
+    const items = [
+        "2 lb salmon",
+        "5 sprigs fresh rosemary",
+        "2 tablespoons olive oil",
+        "2 small lemons",
+        "1 teaspoon kosher salt",
+        "4 cloves of chopped garlic"
+    ]
+
+    const ingredients = React.createElement(
+        "ul",
+        { className: "ingredients" },
+        items.map((ingredient, i) =>
+            React.createElement("li", { key: i }, ingredient)
+        )
+    )
+
+    ReactDOM.render(
+        ingredients,
+        document.getElementById('react-container')
+    )
+
+    console.log('ingredients', ingredients)
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="utf-8">
+    <title>Promises with fetch</title>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<h1>Promises with fetch</h1>
+<p>Open the console</p>
+<script type="text/babel">
+
+    // async/awaitを使って非同期関数を同期関数のように呼び出す
+
+    const getFakePerson = async () => {
+      try {
+        const res = await fetch("https://api.randomuser.me/?nat=US&results=10");
+        const { results } = await res.json();
+        console.log(results);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    getFakePerson();
+
+</script>
+</body>
+</html>

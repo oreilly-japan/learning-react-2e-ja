@@ -1,0 +1,13 @@
+{
+  "name": "in-the-flow",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "flow-bin": "^0.145.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "scripts": {
+    "flow": "flow"
+  }
+}

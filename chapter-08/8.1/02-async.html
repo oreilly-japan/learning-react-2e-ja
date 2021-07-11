@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="utf-8">
+    <title>Async/Await</title>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<h1>Async/Await</h1>
+<p>Open the console</p>
+<script type="text/babel">
+
+  // fetch API (async/await)
+
+  async function requestGithubUser(githubLogin) {
+    try {
+      const response = await fetch(
+        `https://api.github.com/users/${githubLogin}`
+      );
+      const userData = await response.json();
+      console.log(userData);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  requestGithubUser("moonhighway");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="utf-8">
+    <title>Spread Operator</title>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<h1>Spread Operator</h1>
+<p>Open the console</p>
+<script type="text/babel">
+
+    // Array.reverseのイミュータブルな用法
+
+    const peaks = ["Tallac", "Ralston", "Rose"];
+    const [last] = [...peaks].reverse(); // スプレッド構文により配列のコピーを生成してからreverseを呼び出している
+
+    console.log(last); // Rose
+    console.log(peaks.join(', ')); // Tallac, Ralston, Rose
+
+</script>
+</body>
+</html>
