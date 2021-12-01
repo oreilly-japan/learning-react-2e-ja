@@ -50,3 +50,20 @@ API呼び出し等
 ```
 以前はサーバーが公開するREST APIを呼び出すために、
 ```
+
+#### ■3章 P.44 下から4行目の「`return frederick;`」の行が不要
+**誤**
+```
+function selfEducate() {
+  frederick.canRead = true;
+  frederick.canWrite = true;
+  return frederick;
+}
+```
+**正**
+```
+function selfEducate() {
+  frederick.canRead = true;
+  frederick.canWrite = true;
+}
+```
