@@ -8,7 +8,6 @@ function GitHubUser({ login }) {
 
   useEffect(() => {
     if (!data) return;
-    if (data.login === login) return;
     const { name, avatar_url, location } = data;
     saveJSON(`user:${login}`, {
       name,
