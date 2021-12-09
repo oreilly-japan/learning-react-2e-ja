@@ -29,6 +29,54 @@
 
 本ページに掲載されていない誤植など間違いを見つけた方は、japan@oreilly.co.jpまでお知らせください。
 
+### 第2刷まで
+
+#### ■8章 P.176 下から6行目の「`if (data.login === login) return;`」の行が不要
+**誤**
+```
+  if (!data) return;
+  if (data.login === login) return;
+  const { name, avatar_url, location } = data;
+```
+**正**
+```
+  if (!data) return;
+  const { name, avatar_url, location } = data;
+```
+
+#### ■8章 P.177 10行目
+**誤**
+```
+また、データが未取得の場合や、すでに保存済みの場合は何もせずにreturnしています。
+```
+**正**
+```
+また、データが未取得の場合は何もせずにreturnしています。
+```
+
+#### ■8章 P.177 下から16行目の「`if (data.login === login) return;`」の行が不要
+**誤**
+```
+    if (!data) return;
+    if (data.login === login) return;
+    const { name, avatar_url, location } = data;
+```
+**正**
+```
+    if (!data) return;
+    const { name, avatar_url, location } = data;
+```
+
+#### ■8章 P.178 10行目
+**誤**
+```
+いずれの処理も、すでに処理済みのデータを再処理しないようにif文でreturnしています。
+```
+**正**
+```
+また、すでに取得したデータを再取得しないようにif文でreturnしています。
+```
+
 ### 第1刷
 
 #### ■2章 P.27 20行目
