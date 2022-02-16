@@ -41,6 +41,16 @@ asyn/await
 async/await
 ```
 
+#### ■5章 P.95 11行目
+**誤**
+```
+以下は分離したInsttructionsコンポーネントです。
+```
+**正**
+```
+以下は分離したInstructionsコンポーネントです。
+```
+
 #### ■8章 P.176 下から6行目の「`if (data.login === login) return;`」の行が不要
 **誤**
 ```
