@@ -27,6 +27,8 @@
 
     const deepPick = (fields, object={}) => {
        const [first, ...remaining] = fields.split(".")
+       console.log("ログ", first);
+       console.log("ログ2", remaining);
        return (remaining.length) ?
            deepPick(remaining.join("."), object[first]) :
            object[first]

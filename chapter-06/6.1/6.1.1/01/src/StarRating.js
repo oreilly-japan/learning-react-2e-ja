@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaStar } from "react-icons/fa";
+import Star from "./Star";
+
 
 const Star = ({ selected = false }) => (
   <FaStar color={selected ? "red" : "grey"} />

@@ -28,7 +28,10 @@
 
     const log = userLogs("grandpa23");
 
+    console.log("log1",log);
+
     log("attempted to load 20 fake members");
+
     getFakeMembers(20).then(
         members => log(`successfully loaded ${members.length} members`)
       ).catch(
