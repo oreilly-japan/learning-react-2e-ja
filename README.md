@@ -41,6 +41,16 @@ asyn/await
 async/await
 ```
 
+#### ■5章 P.88 サンプルコード下から2行目
+**誤**
+```
+document.getElementById("react-container")
+```
+**正**
+```
+document.getElementById("root")
+```
+
 #### ■5章 P.95 11行目
 **誤**
 ```
